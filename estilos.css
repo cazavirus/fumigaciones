@@ -1,0 +1,61 @@
+* {             /*se coloca * siempre empesando ya que es un selector universal*/
+margin:0;       /*margin y padding en seros nos va a dejar la pagina sin margenes ni espacios que vieneya                      establecidas por defector y asi poder modificar nuestra pagina desde sero.*/
+padding:0;
+}
+body {
+	background: #6ECDF1;
+}
+
+header, .main, footer {
+	background:#fff;
+	width:90%;
+	max-width:1000px;
+	margin:0.5px auto;
+
+}
+
+header nav{
+	background: #04923A;
+	overflow: hidden;
+}
+
+header nav ul{
+	list-style:none;
+}
+header nav ul li {
+	float:left; 
+}
+header nav ul li a{
+	padding:10px 20px;          /*el primer padding que encontramos que en este caso es de 10px es para los espacios de arriba y abajo, el segundo que es de 20px es de los lados.*/
+	/*display:block;              /*display:block; nos permite que funcione el padding de 10px que esta primero que es el espacio de arriba y abajo*/
+	color:#fff;
+	text-decoration:none;
+}
+header nav ul li a:hover{            /*este color es para cuando le coloquemos el mouse al menu coloque el color que le dimos que en este caso es un verde mas clarito que da la censacion que lo mestan seleccionando.*/
+	background:#27CC66;
+}
+.main .articles {                  /*articles por que es la clase que encierra todos nuestro articulos.*/
+     width:100%;                   /*este width es para que nuestros articulos principales ocupen de ancho el 70% de la pagina principal.*/
+     margin-right:1.5%; 
+     float:left;
+}
+.main .articles article{
+	padding:20px;
+	background:#fff;
+	margin-bottom:20px;
+}
+/*aside {
+	width:30%;
+	background:#ff8000;
+	float:left;                   /*para que nos coloque  nuestro parrafo a la derecha como el anterior.*/
+/*	padding:20px;
+	box-sizing:border-box;
+}*/
+footer {
+	background:#000;
+	color:#fff;
+	clear:both;                     /*elimina los float:left; que hay antes de aqui y me va a dejar un espaciado de linea o una separacionde los demas y respetamos todo el tamaño de la página por lo cual lo,pone a lo ancho y separado de los otros parrafos o textos.*/
+    padding:10px 0px;                /*recordemos que el primero que en este caso son 10px es el espacio de arriba y de abajo y el segundo que es 0px en este caso es a los lados pero no queremos crear espacios a los lados.*/
+    text-align:center;               /* text-align:center; es para colocar el texto como en esta ocacion en el centro.*/
+
+}
